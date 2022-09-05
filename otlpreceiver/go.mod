@@ -1,4 +1,4 @@
-module otlpreceiver
+module github.com/h4ckst0ck/otel-test/otlpreceiver
 
 go 1.18
 
