@@ -1,4 +1,4 @@
-module github.com/h4ckst0ck/otel-test/otlpreceiver
+module github.com/h4ckst0ck/otel-test/mqttreceiver
 
 go 1.18
 

@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package github.com/h4ckst0ck/otel-test/otlpreceiver // import "go.opentelemetry.io/collector/receiver/otlpreceiver"
+package mqttreceiver // import "go.opentelemetry.io/collector/receiver/otlpreceiver"
 
 import (
 	"context"
