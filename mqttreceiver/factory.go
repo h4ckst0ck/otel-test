@@ -23,7 +23,7 @@ import (
 	"go.opentelemetry.io/collector/config/confighttp"
 	"go.opentelemetry.io/collector/config/confignet"
 	"go.opentelemetry.io/collector/consumer"
-	"go.opentelemetry.io/collector/internal/sharedcomponent"
+	"github.com/h4ckst0ck/otel-test/mqttreceiver/internal/sharedcomponent"
 )
 
 const (
