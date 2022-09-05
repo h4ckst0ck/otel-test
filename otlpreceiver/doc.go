@@ -13,4 +13,4 @@
 // limitations under the License.
 
 // Package otlpreceiver receives data in OTLP format.
-package otlpreceiver // import "go.opentelemetry.io/collector/receiver/otlpreceiver"
+package github.com/h4ckst0ck/otel-test/otlpreceiver // import "go.opentelemetry.io/collector/receiver/otlpreceiver"
