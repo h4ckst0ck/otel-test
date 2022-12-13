@@ -16,7 +16,6 @@ package mqttreceiver // import "go.opentelemetry.io/collector/receiver/otlprecei
 
 import (
 	"context"
-
 	"go.opentelemetry.io/collector/component"
 	"go.opentelemetry.io/collector/config"
 	"go.opentelemetry.io/collector/config/configgrpc"
@@ -38,9 +37,12 @@ func NewFactory() component.ReceiverFactory {
 	return component.NewReceiverFactory(
 		typeStr,
 		createDefaultConfig,
-		component.WithTracesReceiverAndStabilityLevel(createTracesReceiver, component.StabilityLevelStable),
-		component.WithMetricsReceiverAndStabilityLevel(createMetricsReceiver, component.StabilityLevelStable),
-		component.WithLogsReceiverAndStabilityLevel(createLogReceiver, component.StabilityLevelBeta))
+		component.WithTracesReceiver(createTracesReceiver, component.StabilityLevelStable),
+		component.WithMetricsReceiver(createMetricsReceiver, component.StabilityLevelStable),
+		component.WithLogsReceiver(createLogReceiver, component.StabilityLevelBeta))
+		//component.WithTracesReceiverAndStabilityLevel(createTracesReceiver, component.StabilityLevelStable),
+		//component.WithMetricsReceiverAndStabilityLevel(createMetricsReceiver, component.StabilityLevelStable),
+		//component.WithLogsReceiverAndStabilityLevel(createLogReceiver, component.StabilityLevelBeta))
 }
 
 // createDefaultConfig creates the default configuration for receiver.
